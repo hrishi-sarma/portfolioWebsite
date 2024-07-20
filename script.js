@@ -46,10 +46,9 @@ function init(containerId, modelPath) {
     });
 
    
-    // Handle window resizing
     window.addEventListener('resize', onWindowResize, false);
 
-    // Mouse events for rotating the model
+   
     window.addEventListener('mousedown', onMouseDown, false);
     window.addEventListener('mousemove', onMouseMove, false);
     window.addEventListener('mouseup', onMouseUp, false);
@@ -64,9 +63,9 @@ function onWindowResize() {
 function animate() {
     requestAnimationFrame(animate);
 
-    // Continuous rotation of the model
+    
     if (model) {
-        model.rotation.y += 0.001; // Rotate model continuously
+        model.rotation.y += 0.001; 
     }
 
     renderer.render(scene, camera);
@@ -81,7 +80,7 @@ function onMouseDown(event) {
 function onMouseMove(event) {
     if (isMouseDown && model) {
         const deltaX = event.clientX - previousMouseX;
-        model.rotation.y += deltaX * 0.005; // Adjust sensitivity
+        model.rotation.y += deltaX * 0.005;
         previousMouseX = event.clientX;
     }
 }
@@ -90,6 +89,6 @@ function onMouseUp() {
     isMouseDown = false;
 }
 
-// Initialize the scene with the specified container ID and model path
+
 init('three-container', '3dmodels/codinglangs.glb');
 animate();
