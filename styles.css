@@ -1,11 +1,9 @@
-/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #000000;
 }
 
-/* Navbar Styles */
 .navbar ul {
     display: flex;
     justify-content: center;
@@ -35,25 +33,25 @@ body {
     float: left;
 }
 
-/* Intro Section Styles */
+
 .intro-section {
     position: relative;
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Adjust layout */
-    align-items: center; /* Center align vertically */
+    justify-content: space-between; 
+    align-items: center; 
     overflow: hidden;
-    padding: 0 20px; /* Add horizontal padding */
+    padding: 0 20px;
     box-sizing: border-box;
-    background: url('pics/asdfg.jpg') no-repeat center center; /* Added background image */
-    background-size: cover; /* Ensure the image covers the entire section */
+    background: url('pics/asdfg.jpg') no-repeat center center;
+    background-size: cover; 
 }
 
 .text-box{
     font-family: 'Courier New', Courier, monospace;
-    width: 45%; /* Adjust width */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    width: 45%; 
+    background-color: rgba(0, 0, 0, 0.7); 
     color: rgb(255, 255, 255);
     margin-top: -500px;
     padding: 20px;
@@ -113,14 +111,13 @@ body {
     }
 }
 
-/* Additional Styles */
 .Red-Line {
     display: flex;
     justify-content: space-around;
     padding: 0px;
     background-color: #000;
     border-top: 5px solid red;
-    margin-bottom: 200px; /* Adjusted margin */
+    margin-bottom: 200px; 
 }
 
 .skill-bg {
@@ -158,7 +155,6 @@ body {
     width: 0px;
 }
 
-/* Additional Styles for Home.html */
 .Home-Main {
     position: relative;
     height: 100vh;
@@ -218,7 +214,7 @@ body {
     padding: 20px;
     margin-top: 0px;
     margin-bottom: 50px;
-    background: url('pics/back.jpg') no-repeat center center; /* Added background image */
+    background: url('pics/back.jpg') no-repeat center center; 
     background-size: cover;
     height: 100%;
     width: 100%
@@ -268,7 +264,7 @@ body {
 .button-container {
     display: block;
     justify-content: center;
-    margin-top: 20px; /* Adjusted margin */
+    margin-top: 20px; 
     padding-left: 10px;
     padding-right: 10px
 }
